@@ -1,10 +1,11 @@
 import { StyleSheet, View } from "react-native";
 import { Text } from "react-native-paper";
+import Mission from "../components/mission/Mission";
 export default function BlankScreen() {
   return (
     <>
       <View style={styles.screenContainer}>
-        <Text variant="titleLarge">This is a blank tab!</Text>
+        <Mission />
       </View>
     </>
   );

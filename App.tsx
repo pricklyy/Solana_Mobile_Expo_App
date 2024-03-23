@@ -18,7 +18,6 @@ import {
 } from "react-native-paper";
 import { AppNavigator } from "./src/navigators/AppNavigator";
 import { ClusterProvider } from "./src/components/cluster/cluster-data-access";
-
 const queryClient = new QueryClient();
 
 export default function App() {
@@ -45,7 +44,9 @@ export default function App() {
     },
   };
   return (
+    
     <QueryClientProvider client={queryClient}>
+      
       <ClusterProvider>
         <ConnectionProvider config={{ commitment: "processed" }}>
           <SafeAreaView

@@ -5,6 +5,9 @@ import { HomeScreen } from "../screens/HomeScreen";
 import MaterialCommunityIcon from "@expo/vector-icons/MaterialCommunityIcons";
 import { useTheme } from "react-native-paper";
 import BlankScreen from "../screens/BlankScreen";
+import ProfileScreen from "../screens/PersonalScreen";
+import RewardsScreen from "../screens/RewardsScreen ";
+import ChiTietScreen from "../screens/ChiTietScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,11 +33,33 @@ export function HomeNavigator() {
                   color={color}
                 />
               );
-            case "Blank":
+            case "Task":
               return (
                 <MaterialCommunityIcon
                   name={
                     focused ? "application-edit" : "application-edit-outline"
+                  }
+                  size={size}
+                  color={color}
+                />
+              );
+
+              case "Điểm thưởng":
+              return (
+                <MaterialCommunityIcon
+                  name={
+                    focused ? "star" : "star-circle-outline"
+                  }
+                  size={size}
+                  color={color}
+                />
+              );
+
+              case "Profile":
+              return (
+                <MaterialCommunityIcon
+                  name={
+                    focused ? "account" : "account-circle"
                   }
                   size={size}
                   color={color}
@@ -45,7 +70,10 @@ export function HomeNavigator() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Blank" component={BlankScreen} />
+      <Tab.Screen name="Task" component={BlankScreen} />
+      <Tab.Screen name="Điểm thưởng" component={RewardsScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
+      
     </Tab.Navigator>
   );
 }
