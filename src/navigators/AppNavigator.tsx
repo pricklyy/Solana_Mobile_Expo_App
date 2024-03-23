@@ -18,6 +18,10 @@ import {
   MD3LightTheme,
   adaptNavigationTheme,
 } from "react-native-paper";
+import ChiTietScreen from "../screens/ChiTietScreen";
+import Welcome from "../screens/Welcome";
+import Login from "../screens/Login";
+import Register from "../screens/Register";
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -56,6 +60,11 @@ const AppStack = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen name="Settings" component={Screens.SettingsScreen} />
+
+      <Stack.Screen name="Details" component={ChiTietScreen} />
+      <Stack.Screen  name="Welcome" component={Welcome} />
+      <Stack.Screen  name="Login" component={Login} />
+      <Stack.Screen  name="Register" component={Register} />
       {/** 🔥 Your screens go here */}
     </Stack.Navigator>
   );
@@ -89,12 +98,17 @@ export const AppNavigator = (props: NavigationProps) => {
   };
 
   return (
+    
     <NavigationContainer
       theme={colorScheme === "dark" ? CombinedDarkTheme : CombinedDefaultTheme}
       {...props}
     >
+      
       <StatusBar />
+      
+      
       <AppStack />
+      
     </NavigationContainer>
   );
 };
