@@ -55,7 +55,7 @@ const ProfileScreen = () => {
             <Title style={[styles.title, {
               marginTop: 15,
               marginBottom: 5,
-              color:'#fff'
+              color:'#d1bcff'
             }]}>{user.fullname}</Title>
           </View>
         </View>
@@ -108,7 +108,7 @@ export default ProfileScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1c1b20'
+    backgroundColor: '#fff'
                   
     
   },
@@ -136,9 +136,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   infoBoxWrapper: {
-    borderBottomColor: '#fff',
+    borderBottomColor: '#d1bcff',
     borderBottomWidth: 1,
-    borderTopColor: '#fff',
+    borderTopColor: '#d1bcff',
     borderTopWidth: 1,
     flexDirection: 'row',
     height: 100,
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
   },
   menuItemText: {
-    color: '#fff',
+    color: '#d1bcff',
     marginLeft: 20,
     fontWeight: '600',
     fontSize: 16,
