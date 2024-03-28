@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
           
       },
     mission : {
-        backgroundColor : '#fff',
+        backgroundColor : '#d1bcff',
         width: 350,
         height: 110,
         borderWidth : 1,

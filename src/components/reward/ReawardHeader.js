@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 20,
-    backgroundColor: '#1c1b20',
+    backgroundColor: '#fff',
   },
   pointsContainer: {
     flex: 1,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     height: 30,
   },
   text1 : {
-    color : '#fff'
+    color : '#d1bcff'
   }
 });
 

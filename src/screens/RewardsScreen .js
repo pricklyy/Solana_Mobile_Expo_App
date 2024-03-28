@@ -104,7 +104,7 @@ const RewardsScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1c1b20',
+    backgroundColor: '#fff',
   },
   headerContainer: {
     flexDirection: 'row',
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#000000',
   },
   viewAllText: {
     fontSize: 16,

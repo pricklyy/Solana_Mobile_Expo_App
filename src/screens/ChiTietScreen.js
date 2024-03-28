@@ -14,15 +14,15 @@ const ChiTietScreen = ({ route }) => {
 
     const [showLottie, setShowLottie] = useState(false);
 
-    // const goToStatus = (status) => {
-    //     setShowLottie(true);
-    //     // nhanNhiemVu(item);
-    //     // Set a timeout to navigate to Status Screen after 2 seconds
-    //     setTimeout(() => {
-    //       setShowLottie(false);
-    //       // navigation.navigate('Doing', {item});
-    //     }, 2000);
-    //   };
+    const goToStatus = (status) => {
+        setShowLottie(true);
+        // nhanNhiemVu(item);
+        // Set a timeout to navigate to Status Screen after 2 seconds
+        setTimeout(() => {
+          setShowLottie(false);
+          navigation.navigate('Doing');
+        }, 2000);
+      };
 
       
 
@@ -41,7 +41,7 @@ const ChiTietScreen = ({ route }) => {
           source={require('../../assets/diem.png')}/></Text>
             <Text style={styles.textcc}>Mô tả: {item&&item.moTa}</Text>
             <View style={styles.button}>
-            <TouchableOpacity >
+            <TouchableOpacity onPress={goToStatus}>
             <Text style={styles.textbutton}>Nhận</Text>
             </TouchableOpacity>
             
